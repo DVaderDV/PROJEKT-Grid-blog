@@ -65,4 +65,23 @@ blockquote {
 	- https://css-tricks.com/patterns-for-practical-css-custom-properties-use/
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	gap: 40px;
+}
+
+header, 
+h2,
+p,
+figure,
+blockquote,
+footer {
+	grid-column: 2;
+}
+
+.tip-vlevo {
+	grid-column: 1;
+	text-align: justify;
+}
 
